@@ -1,5 +1,6 @@
 import { ChangeEvent, useState, useCallback } from 'react';
 import Image from 'next/future/image';
+import Link from 'next/link';
 
 export interface NavbarProps {
   inverted?: boolean;
@@ -13,6 +14,17 @@ const Logo = () => (
     <Image src="/XMLID-15.svg" alt="Neovim" className="h-14" width={40} height={40} />
   </a>
 );
+
+const WatchNow = () => {
+  return (
+    <Link href="https://www.youtube.com/channel/UCPK_UHtbfcWABCi0F0GPG6w/playlists">
+      <a className="hover:underline" target="_blank">
+        Watch Now!
+      </a>
+    </Link>
+  );
+};
+
 
 const RegisterPrompt = () => {
   const [email, setEmail] = useState('');
@@ -45,11 +57,12 @@ const Navbar = (props: NavbarProps) => {
   return (
     <nav
       className={`fixed top-0 right-0 left-0 h-16
-        flex items-center px-4 justify-between text-gray-800
+        flex items-center px-4 text-gray-800
         transition duration-300
         ${background}`}
     >
       <Logo />
+      <WatchNow />
       <RegisterPrompt />
     </nav>
   );
