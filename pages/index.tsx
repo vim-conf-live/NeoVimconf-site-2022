@@ -4,6 +4,7 @@ import HeroSection from 'components/HeroSection';
 import Link from 'next/link';
 import Image from 'next/future/image';
 import NavbarLayout from 'components/NavbarLayout';
+import SpeakersSection from 'components/SpeakersSection';
 
 function Home() {
   return (
@@ -47,6 +48,7 @@ function Home() {
             </div>
           </div>
         </div>
+        <SpeakersSection />
       </main>
     </>
   );
