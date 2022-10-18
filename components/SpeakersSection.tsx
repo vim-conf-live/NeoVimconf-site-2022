@@ -1,8 +1,10 @@
-const Speaker = () => {
+import speakers, { Speaker } from "../speakers";
+
+const Speaker = (speaker: Speaker) => {
   return (
-    <>
-      <p>Emi, Age 23</p>
-    </>
+    <div className="info grid-hero-info">
+      <p>{speaker.name}</p>
+    </div>
   );
 };
 
@@ -10,10 +12,7 @@ const SpeakersSection = () => {
   return (
     <section className="py-16">
       <h2 className="">Speakers</h2>
-      <Speaker />
-      <Speaker />
-      <Speaker />
-      <Speaker />
+      {speakers.map(s => <Speaker { ...s } />)}
     </section>
   );
 };
