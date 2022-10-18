@@ -2,7 +2,7 @@ import { ChangeEvent, useState, useCallback } from 'react';
 import Image from 'next/future/image';
 
 export interface NavbarProps {
-  scrolling?: boolean;
+  inverted?: boolean;
 }
 
 const Logo = () => (
@@ -40,14 +40,14 @@ const RegisterPrompt = () => {
 };
 
 const Navbar = (props: NavbarProps) => {
-  const { scrolling } = props;
+  const background = props.inverted ? 'bg-black' : 'bg-green-500'
 
   return (
     <nav
       className={`fixed top-0 right-0 left-0 h-16
         flex items-center px-4 justify-between text-gray-800
         transition duration-300
-        ${scrolling ? 'bg-black' : 'bg-green-500'}`}
+        ${background}`}
     >
       <Logo />
       <RegisterPrompt />

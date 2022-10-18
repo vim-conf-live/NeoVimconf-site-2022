@@ -21,7 +21,7 @@ export default function Home() {
 
   return (
     <div className="text-gray-200">
-      <Navbar scrolling={scrolling} />
+      <Navbar inverted={scrolling} />
       <Head>
         <title>Neovim Conf 2022</title>
       </Head>
