@@ -20,7 +20,7 @@ export default function Home() {
   }, [handleScroll]);
 
   return (
-    <div className="min-h-screen text-gray-200">
+    <div className="text-gray-200">
       <Navbar scrolling={scrolling} />
       <Head>
         <title>Neovim Conf 2022</title>
