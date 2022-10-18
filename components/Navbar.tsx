@@ -25,6 +25,15 @@ const WatchNow = () => {
   );
 };
 
+const JoinDiscord = () => {
+  return (
+    <Link href="https://youtu.be/dQw4w9WgXcQ">
+      <a style={{ background: "rgba(59, 130, 246, 1)" }} className="rounded-lg">
+        Join Discord
+      </a>
+    </Link>
+  );
+};
 
 const RegisterPrompt = () => {
   const [email, setEmail] = useState('');
@@ -63,6 +72,7 @@ const Navbar = (props: NavbarProps) => {
     >
       <Logo />
       <WatchNow />
+      <JoinDiscord />
       <RegisterPrompt />
     </nav>
   );
