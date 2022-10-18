@@ -28,7 +28,7 @@ const WatchNow = () => {
 const JoinDiscord = () => {
   return (
     <Link href="https://youtu.be/dQw4w9WgXcQ">
-      <a style={{ background: "rgba(59, 130, 246, 1)" }} className="rounded-lg">
+      <a style={{ background: "rgba(59, 130, 246, 1)" }} className="rounded-lg" target="_blank">
         Join Discord
       </a>
     </Link>
