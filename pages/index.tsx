@@ -13,10 +13,7 @@ function Home() {
         <title>Neovim Conf 2022</title>
       </Head>
 
-      <main
-        className="mt-16 flex w-full flex-1 flex-col items-center justify-center
-        text-center"
-      >
+      <main className="mt-16 flex w-full flex-1 flex-col items-center justify-center">
         <div className="grid grid-cols-1 content-center items-center justify-center justify-items-center sm:grid-cols-2">
           <HeroSection />
           <div className="info grid-hero-info grid content-center justify-items-center gap-8 p-4">
