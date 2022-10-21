@@ -22,7 +22,8 @@ section h2 {
   @apply mb-4 text-3xl sm:text-5xl;
 }
 
-.rebranding h2 {
+.rebranding,
+.last-years-videos h2 {
   @apply mb-2 text-lg sm:text-2xl;
 }
 

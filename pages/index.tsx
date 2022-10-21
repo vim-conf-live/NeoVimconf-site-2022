@@ -35,7 +35,10 @@ function Home() {
                     The Rebranding Rationale
                   </a>
                 </Link>
-                <Link href="https://forms.gle/hU18jSEWL2r9xmqP9" target="_blank">
+                <Link
+                  href="https://forms.gle/hU18jSEWL2r9xmqP9"
+                  target="_blank"
+                >
                   <a
                     target="_blank"
                     className="grid content-center rounded-lg bg-green-500 p-2 transition hover:bg-green-600"
@@ -46,6 +49,16 @@ function Home() {
               </div>
             </div>
           </div>
+        </div>
+        <div className="last-years-videos mt-20 grid content-center items-center">
+          <h2>Watch some last year videos</h2>
+          <iframe
+            width="560"
+            height="315"
+            src="https://www.youtube.com/embed/Muk6lXGQTwM"
+            title="YouTube video player"
+            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+          ></iframe>
         </div>
       </main>
     </>
