@@ -31,9 +31,9 @@ const Navbar = (props: NavbarProps) => {
 
   return (
     <nav
-      className={`fixed top-0 right-0 left-0 flex
-        h-16 items-center justify-between px-4 text-white
-        transition duration-300
+      className={`fixed top-0 right-0 left-0 z-10
+        flex h-16 items-center justify-between px-4
+        text-white transition duration-300
         ${scrollingClass}`}
     >
       <div className="flex cursor-pointer" onClick={(e) => handleLogoClick(e)}>

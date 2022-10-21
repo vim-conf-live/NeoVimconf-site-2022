@@ -19,6 +19,28 @@ module.exports = {
         roboto: ['Roboto', 'sans-serif'],
         montserrat: ['Montserrat', 'sans-serif'],
       },
+      keyframes: {
+        glow: {
+          from: {
+            filter: `blur(3px)`,
+          },
+          to: {
+            filter: `blur(6px)`,
+          },
+          glow2: {
+            from: {
+              filter: `blur(10px)`,
+            },
+            to: {
+              filter: `blur(15px)`,
+            },
+          },
+        },
+      },
+      animation: {
+        glow: 'glow 2s alternate infinite',
+        glow2: 'glow2 2s alternate infinite',
+      },
     },
   },
   variants: {
