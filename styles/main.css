@@ -31,6 +31,18 @@ section h2 {
   @apply mb-12 text-green-500;
 }
 
+.youtube-embed {
+  height: 240px;
+  width: 100%;
+}
+
+@media only screen and (min-width: 600px) {
+  .youtube-embed {
+    height: 480px;
+    width: 100%;
+  }
+}
+
 .blur {
   background-image: linear-gradient(
     -45deg,
