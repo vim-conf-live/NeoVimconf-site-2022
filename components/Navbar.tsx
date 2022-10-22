@@ -22,7 +22,7 @@ const Navbar = (props: NavbarProps) => {
 
   const handleLogoClick = (e: React.MouseEvent<HTMLDivElement, MouseEvent>) => {
     e.preventDefault();
-    if (router.pathname == '/')
+    if (router.pathname === '/')
       document.documentElement.scrollTo({ top: 0, behavior: 'smooth' });
     else router.push('/', undefined, { scroll: false });
   };
@@ -36,7 +36,7 @@ const Navbar = (props: NavbarProps) => {
         transition duration-300
         ${scrollingClass}`}
     >
-      <div className="flex cursor-pointer" onClick={(e) => handleLogoClick(e)}>
+      <div className="flex cursor-pointer hover:opacity-70 transition duration-300" onClick={handleLogoClick}>
         <Image
           src="/neovimconf-logo.svg"
           alt="NeovimConf logo"
