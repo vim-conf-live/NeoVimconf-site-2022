@@ -1,15 +1,17 @@
-const RegistrationSuccessMsg = () => {
+interface Props {
+  show: boolean;
+}
+
+const RegistrationSuccessMsg = (props: Props) => {
+  const { show } = props;
+
+  if (!show) {
+    return null;
+  }
+
   return (
-    <div
-      className={`container m-4 mx-auto flex min-h-screen items-center
-      justify-center font-mono 
-    `}
-    >
-      <div className="text-2xl text-green-500">
-        <p>{`Congratulations! You have registered for NeoVim Conf 2022.`}</p>
-        <p>{`Looking forward to seeing you there!`}</p>
-        <p>{`Don't forget to add a reminder to your calendar.`}</p>
-      </div>
+    <div className="text-sm text-green-500">
+      <p>{`Thanks! You have registered as a speaker. We will contact you shortly.`}</p>
     </div>
   );
 };

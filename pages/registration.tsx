@@ -24,6 +24,8 @@ function RegistrationPage() {
   const handleSubmitRegistration = useCallback(
     async (event: MouseEvent<HTMLButtonElement>) => {
       event.preventDefault();
+      setError(false);
+      setSuccess(false);
       try {
         await userbase.signUp({
           email,
@@ -39,37 +41,32 @@ function RegistrationPage() {
     [email]
   );
 
-  if (success) {
-    return <RegistrationSuccessMsg />;
-  }
-
-  if (error) {
-    return <RegistrationErrorMsg />;
-  }
-
   return (
     <div
-      className={`container m-4 mx-auto flex min-h-screen
-      items-center justify-center 
+      className={`max-w-screen-sm mx-auto mt-20 sm:mt-40 min-h-screen
+       text-center 
     `}
     >
-      <form className="flex w-96 flex-col gap-4">
-        <label className="text-sm text-gray-300">Register to speak</label>
+      <h1 className="text-4xl mb-16">Register as a speaker</h1>
+      <form className="mb-4 flex items-center justify-center">
         <input
-          className="rounded-sm p-2 text-gray-800"
+          className="w-72 rounded-l p-2 text-gray-800"
           type="text"
+          placeholder="Your email address"
           value={email}
           onChange={handleEmailChange}
         />
         <button
           type="submit"
-          className={`rounded bg-green-500 px-4 py-2 text-blue-900 shadow transition 
-            hover:bg-green-600`}
+          className={`rounded-r bg-gray-300 px-4 py-2 text-blue-900 shadow 
+            transition hover:bg-gray-400`}
           onClick={handleSubmitRegistration}
         >
           Register
         </button>
       </form>
+      <RegistrationErrorMsg show={Boolean(error)} />
+      <RegistrationSuccessMsg show={Boolean(success)} />
     </div>
   );
 }
