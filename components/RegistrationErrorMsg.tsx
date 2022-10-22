@@ -6,7 +6,7 @@ interface Props {
   show: boolean;
 }
 
-const RegistrationErrorMsg = (props:Props) => {
+const RegistrationErrorMsg = (props: Props) => {
   const { show, message = genericErrorMsg } = props;
 
   if (!show) {
@@ -14,9 +14,9 @@ const RegistrationErrorMsg = (props:Props) => {
   }
 
   return (
-      <div className="text-red-400 text-sm">
-        <p>{message}</p>
-      </div>
+    <div className="text-sm text-red-400">
+      <p>{message}</p>
+    </div>
   );
 };
 

@@ -31,8 +31,10 @@ function Home() {
               </div>
               <div className="text-8 grid grid-cols-2 gap-4">
                 <Link href="/rebranding-rationale">
-                  <a className={`grid content-center rounded-lg bg-green-700 text-sm 
-                    py-3 px-4 transition duration-300 hover:bg-green-800`}>
+                  <a
+                    className={`grid content-center rounded-lg bg-green-700 py-3 
+                    px-4 text-sm transition duration-300 hover:bg-green-800`}
+                  >
                     The Rebranding Rationale
                   </a>
                 </Link>
@@ -43,7 +45,7 @@ function Home() {
                   <a
                     target="_blank"
                     className={`grid content-center rounded-lg bg-green-700 py-3 px-4
-                      transition duration-300 text-sm hover:bg-green-800`}
+                      text-sm transition duration-300 hover:bg-green-800`}
                   >
                     Speaker Signup
                   </a>

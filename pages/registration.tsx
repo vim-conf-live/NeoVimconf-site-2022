@@ -43,11 +43,11 @@ function RegistrationPage() {
 
   return (
     <div
-      className={`max-w-screen-sm mx-auto mt-20 sm:mt-40 min-h-screen
-       text-center 
+      className={`mx-auto mt-20 min-h-screen max-w-screen-sm text-center
+       sm:mt-40 
     `}
     >
-      <h1 className="text-4xl mb-16">Register as a speaker</h1>
+      <h1 className="mb-16 text-4xl">Register as a speaker</h1>
       <form className="mb-4 flex items-center justify-center">
         <input
           className="w-72 rounded-l p-2 text-gray-800"

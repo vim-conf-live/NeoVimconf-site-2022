@@ -36,7 +36,10 @@ const Navbar = (props: NavbarProps) => {
         transition duration-300
         ${scrollingClass}`}
     >
-      <div className="flex cursor-pointer hover:opacity-70 transition duration-300" onClick={handleLogoClick}>
+      <div
+        className="flex cursor-pointer transition duration-300 hover:opacity-70"
+        onClick={handleLogoClick}
+      >
         <Image
           src="/neovimconf-logo.svg"
           alt="NeovimConf logo"
