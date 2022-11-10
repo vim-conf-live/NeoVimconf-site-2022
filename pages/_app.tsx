@@ -61,7 +61,6 @@ function MyApp({ Component, pageProps }) {
       <NavbarLayout>
         <Component {...pageProps} />
       </NavbarLayout>
-      ;
     </>
   );
 }
