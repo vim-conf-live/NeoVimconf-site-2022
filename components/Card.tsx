@@ -187,8 +187,7 @@ const Card = (props: Props) => {
               fill
               src={src}
               alt="speaker profile image"
-              className="rounded-full"
-              style={{ objectFit: 'cover' }}
+              className="rounded-full object-cover"
             />
           </div>
 
